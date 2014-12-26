@@ -7,7 +7,10 @@ A Perl script for quickly making thumbnails and other sizes for blog posts
 Run the following command to create sizes of an image:
 
 ```
-perl resiez.pl [image] [sizes] [directory]
+perl resize.pl [image] [sizes] [directory]
+
+e.g.
+perl resize.pl modularity.jpg sizes.json
 ```
 
 This produces images in the following format:
