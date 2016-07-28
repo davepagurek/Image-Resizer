@@ -1,7 +1,7 @@
 {
     "thumbnail": {
-        "width": 220,
-        "height": 220,
+        "width": 500,
+        "height": 500,
         "crop": 1,
         "quality": 85
     },

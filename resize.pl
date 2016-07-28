@@ -1,14 +1,19 @@
-#!C:/Perl/bin/perl.exe
+#!/usr/bin/env perl
 use JSON;
 use GD;
 use CGI;
+use File::Basename;
 use strict;
 
 
 sub resize {
     my $file = shift;
     my $sizes = shift;
-    my $imgDir = shift || ".";
+    my $imgDir = shift;
+    if (!$imgDir) {
+      my ($a, $b, $c) = fileparse($file);
+      $imgDir = $b;
+    }
 
     if (!-d $imgDir) {
         mkdir $imgDir or die "Unable to create $imgDir";
